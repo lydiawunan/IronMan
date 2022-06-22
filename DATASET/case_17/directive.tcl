@@ -1,0 +1,25 @@
+set_directive_resource -core Mul_LUT "case_17" m12
+set_directive_resource -core Mul_LUT "case_17" m13
+set_directive_resource -core Mul_LUT "case_17" m14
+set_directive_resource -core Mul_LUT "case_17" m15
+set_directive_resource -core Mul_LUT "case_17" m16
+set_directive_resource -core Mul_LUT "case_17" m17
+set_directive_resource -core Mul_LUT "case_17" m18
+set_directive_resource -core Mul_LUT "case_17" m19
+set_directive_resource -core Mul_LUT "case_17" m20
+set_directive_resource -core Mul_LUT "case_17" m21
+set_directive_resource -core Mul_LUT "case_17" m22
+set_directive_resource -core Mul_LUT "case_17" m23
+set_directive_resource -core Mul_LUT "case_17" m24
+set_directive_resource -core Mul_LUT "case_17" m25
+set_directive_resource -core Mul_LUT "case_17" m26
+set_directive_resource -core Mul_LUT "case_17" m27
+set_directive_resource -core Mul_LUT "case_17" m28
+set_directive_resource -core Mul_LUT "case_17" m29
+set_directive_resource -core Mul_LUT "case_17" m30
+set_directive_resource -core Mul_LUT "case_17" m31
+set_directive_resource -core Mul_LUT "case_17" m32
+set_directive_resource -core Mul_LUT "case_17" m33
+set_directive_resource -core Mul_LUT "case_17" m34
+set_directive_resource -core Mul_LUT "case_17" m35
+

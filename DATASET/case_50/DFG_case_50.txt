@@ -1,0 +1,272 @@
+# Primary Inputs:
+in1 INT9
+in2 INT12
+in3 INT4
+in4 INT3
+in5 INT6
+in6 INT4
+in7 INT5
+in8 INT8
+in9 INT14
+in10 INT2
+in11 INT6
+in12 INT15
+in13 INT13
+in14 INT16
+in15 INT6
+in16 INT3
+in17 INT10
+
+
+# Intermediate Operations:
+m18 * INT11
+m19 * INT5
+m20 * INT11
+m21 * INT13
+m22 * INT3
+m23 * INT12
+m24 * INT4
+m25 * INT12
+m26 * INT3
+m27 * INT6
+m28 * INT13
+m29 * INT15
+m30 * INT8
+m31 * INT8
+m32 + INT4
+m33 * INT7
+m34 + INT5
+m35 * INT9
+m36 + INT12
+m37 * INT15
+m38 * INT12
+m39 * INT12
+m40 * INT13
+m41 * INT11
+m42 * INT14
+m43 * INT15
+m44 * INT11
+m45 * INT14
+m46 * INT6
+m47 * INT6
+m48 * INT6
+m49 * INT5
+m50 * INT15
+m51 * INT9
+m52 * INT7
+m53 * INT5
+m54 * INT7
+m55 * INT8
+m56 * INT2
+m57 + INT7
+m58 * INT10
+m59 * INT8
+m60 + INT4
+m61 * INT3
+m62 * INT7
+m63 * INT4
+m64 + INT6
+m65 * INT9
+m66 * INT5
+m67 + INT6
+m68 * INT9
+m69 * INT3
+m70 * INT12
+m71 + INT9
+m72 * INT6
+m73 * INT5
+m74 * INT9
+m75 * INT12
+m76 * INT15
+m77 + INT6
+m78 * INT8
+m79 * INT4
+m80 * INT7
+m81 * INT12
+m82 * INT10
+m83 * INT8
+m84 * INT12
+m85 * INT15
+m86 * INT3
+m87 + INT6
+m88 * INT2
+m89 + INT6
+m90 * INT5
+
+
+# Edges:
+in2 m18
+in17 m18
+in12 m19
+in6 m19
+in14 m20
+m19 m20
+in15 m21
+in8 m21
+in7 m22
+in15 m22
+in15 m23
+in9 m23
+m23 m24
+in7 m24
+in13 m25
+in8 m25
+m22 m26
+m19 m26
+m20 m27
+m23 m27
+in12 m28
+m22 m28
+m22 m29
+in12 m29
+m28 m30
+m24 m30
+m30 m31
+m25 m31
+in16 m32
+in16 m32
+m19 m33
+m26 m33
+m26 m34
+m32 m34
+m29 m35
+m25 m35
+m28 m36
+m27 m36
+m27 m37
+m20 m37
+m31 m38
+m33 m38
+m24 m39
+m38 m39
+m38 m40
+m34 m40
+m29 m41
+m38 m41
+m29 m42
+m40 m42
+m37 m43
+m33 m43
+m37 m44
+m27 m44
+m41 m45
+m37 m45
+m38 m46
+m45 m46
+m37 m47
+m33 m47
+m31 m48
+m44 m48
+m35 m49
+m33 m49
+m39 m50
+m45 m50
+m45 m51
+m42 m51
+m47 m52
+m36 m52
+m49 m53
+m44 m53
+m39 m54
+m46 m54
+m52 m55
+m45 m55
+m49 m56
+m48 m56
+m53 m57
+m45 m57
+m51 m58
+m41 m58
+m44 m59
+m51 m59
+m49 m60
+m56 m60
+m49 m61
+m54 m61
+m52 m62
+m50 m62
+m52 m63
+m53 m63
+m63 m64
+m59 m64
+m60 m65
+m62 m65
+m53 m66
+m65 m66
+m66 m67
+m57 m67
+m59 m68
+m62 m68
+m67 m69
+m57 m69
+m68 m70
+m66 m70
+m69 m71
+m62 m71
+m66 m72
+m69 m72
+m59 m73
+m65 m73
+m66 m74
+m62 m74
+m58 m75
+m74 m75
+m72 m76
+m65 m76
+m72 m77
+m62 m77
+m70 m78
+m75 m78
+m75 m79
+m62 m79
+m66 m80
+m71 m80
+m70 m81
+m78 m81
+m75 m82
+m67 m82
+m80 m83
+m74 m83
+m81 m84
+m75 m84
+m82 m85
+m75 m85
+m80 m86
+m79 m86
+m71 m87
+m85 m87
+m77 m88
+m86 m88
+m78 m89
+m75 m89
+m79 m90
+m84 m90
+m18 o91
+m21 o92
+m43 o93
+m55 o94
+m61 o95
+m64 o96
+m73 o97
+m76 o98
+m83 o99
+m87 o100
+m88 o101
+m89 o102
+m90 o103
+
+
+# Primary Outputs:
+o91
+o92
+o93
+o94
+o95
+o96
+o97
+o98
+o99
+o100
+o101
+o102
+o103
