@@ -210,15 +210,15 @@ for k in range(len(case_index)):
     node_dir_set=set(node_dir)
     # save edge information
     edge_data = pd.DataFrame({'source':edge_source,'target':edge_end})
-    edge_data.to_csv('case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_edge.csv',index=False)
+    edge_data.to_csv('DATASET/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_edge.csv',index=False)
 
     # save meta data, input nodes, intermediate nodes, output nodes, number of multiplications, number of edges
     meta_data = pd.DataFrame({'input':[input_node],'inter':[inter_node],'output':[out_node],'mul':[len(node_dir)],'edge':[edge_count]})
-    meta_data.to_csv('case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_metadata.csv',index=False)
+    meta_data.to_csv('DATASET/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_metadata.csv',index=False)
     multi_dir.append(node_dir)
 
     # get directives, targets
-    case=pd.read_json(r'case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_all_data.json')
+    case=pd.read_json(r'DATASET/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_all_data.json')
     LUT_number=case.iloc[1]
     DSP_number=case.iloc[3]
     CP_number=case.iloc[6]
@@ -238,9 +238,9 @@ for k in range(len(case_index)):
     graph_target_lut=pd.DataFrame(LUT)
     graph_target_dsp=pd.DataFrame(DSP)
     graph_target_cp=pd.DataFrame(CP)
-    graph_target_lut.to_csv('case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_target_lut.csv',index=False)
-    graph_target_dsp.to_csv('case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_target_dsp.csv',index=False)
-    graph_target_cp.to_csv('case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_target_cp.csv',index=False)
+    graph_target_lut.to_csv('DATASET/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_target_lut.csv',index=False)
+    graph_target_dsp.to_csv('DATASET/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_target_dsp.csv',index=False)
+    graph_target_cp.to_csv('DATASET/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_target_cp.csv',index=False)
     LUT_target=LUT_target+LUT
     DSP_target=DSP_target+DSP
     CP_target=CP_target+CP
@@ -283,7 +283,7 @@ for k in range(len(case_index)):
     df['f9']=f9
     df['f10']=f10
     # save plain graphs (with no directives)
-    df.to_csv('case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_plain.csv',index=False)
+    df.to_csv('DATASET/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_plain.csv',index=False)
     if case_index[k] in [100,101,103,104,105,106]:
         with open('info_case_'+str(case_index[k])+'_node_number_mapping', 'wb') as fp:
             pickle.dump(node_number_mapping, fp)
@@ -297,7 +297,7 @@ for k in range(len(case_index)):
             if index in node_dir_set:
                 f10[index]=10
         df['f10']=f10
-        df.to_csv('case_'+str(case_index[k])+'/case'+str(case_index[k])+'_'+str(i)+'.csv',index=False)
+        df.to_csv('DATASET/case_'+str(case_index[k])+'/case'+str(case_index[k])+'_'+str(i)+'.csv',index=False)
 
 # save targets together
 lut_target_pd=pd.DataFrame({'LUT':LUT_target})
@@ -313,7 +313,7 @@ plain_graph=[0 for k in range(len(case_index))]
 metadata=[0 for k in range(len(case_index))]
 
 for k in range(len(case_index)):
-    name='case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_'
+    name='DATASET/case_'+str(case_index[k])+'/case_'+str(case_index[k])+'_'
     edge[k]=pd.read_csv(name+'edge.csv')
     plain_graph_k=pd.read_csv(name+'plain.csv')
     plain_graph[k]=plain_graph_k.set_index("id")

@@ -22,27 +22,27 @@
 * Vivado
 
 ## Dataset Generation
-* [Synthetic DFGs generation](https://github.com/lydiawunan/IronMan/tree/main/synthetic_case_generation/readme.md)
-* After DFGs are generated, move them to [DATASET](https://github.com/lydiawunan/IronMan/tree/main/DATASET)
+* [Synthetic DFGs generation](https://github.com/lydiawunan/IronMan/tree/main/synthetic_case_generation/readme.md).
+* After DFGs are generated, move them to [DATASET](https://github.com/lydiawunan/IronMan/tree/main/DATASET).
 * [data_preprocess.py](https://github.com/lydiawunan/IronMan/tree/main/data_preprocess.py) and [generate_graph_datasets.py](https://github.com/lydiawunan/IronMan/tree/main/generate_graph_datasets.py) produce the necessary dataset files for GPP training.
 
 ## GPP
-* Three GNN-based models to predict DSP, LUT, and critical path (CP)timing.
-* After GPP is well trained, move the proxy models and the embedding models to [RLMD](https://github.com/lydiawunan/IronMan/tree/main/RLMD)
+* Three GNN-based models to predict DSP, LUT, and critical path (CP) timing.
+* After GPP is well trained, move the proxy models and the embedding models to [RLMD](https://github.com/lydiawunan/IronMan/tree/main/RLMD).
 
 
 ## RLMD
-* Two RL methods are included in RLMD: actor critic, and policy gradient
-* [hls_env.py](https://github.com/lydiawunan/IronMan/tree/main/RLMD/hls_env.py): the environment
-* [target_tuples.py](https://github.com/lydiawunan/IronMan/tree/main/RLMD/target_tuples.py): shuffle the tuples for RLMD training
+* Two RL methods are included in RLMD: actor critic, and policy gradient.
+* [hls_env.py](https://github.com/lydiawunan/IronMan/tree/main/RLMD/hls_env.py): the environment.
+* [target_tuples.py](https://github.com/lydiawunan/IronMan/tree/main/RLMD/target_tuples.py): shuffle the tuples for RLMD training.
 
 ## Meta-heuristics
-* We include simulated annealing (SA), genetic algorithm (GA), particle swarm optimization (PSO), and ant colony optimization (ACO)
+* We include simulated annealing (SA), genetic algorithm (GA), particle swarm optimization (PSO), and ant colony optimization (ACO).
 * Note that these meta-heuristics also need the help of GPP.
 
 ## Data Post-processing
-* [data_postprocess.ipynb](https://github.com/lydiawunan/IronMan/tree/main/data_postprocess.ipynb): convert generated solutions to json files
-* [Get_Perf.py](https://github.com/lydiawunan/IronMan/tree/main/Get_Perf.py): invoke Vitis HLS and Vivado to get the post-implementation resource usage and timing, given the json files
+* [data_postprocess.ipynb](https://github.com/lydiawunan/IronMan/tree/main/data_postprocess.ipynb): convert generated solutions to json files.
+* [Get_Perf.py](https://github.com/lydiawunan/IronMan/tree/main/Get_Perf.py): invoke Vitis HLS and Vivado to get the post-implementation resource usage and timing, given the json files (solutions) and cc files (designs in C++).
 
 ## Contact
 - If there is any question, please drop an email to nanwu@ucsb.edu
