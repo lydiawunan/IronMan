@@ -2,12 +2,12 @@
 
 **Related Papers**
 * [GLSVLSI'21] [IronMan: GNN-ass<u>i</u>sted Design Space Explo<u>r</u>ati<u>o</u>n in High-Level Sy<u>n</u>thesis via Reinforce<u>m</u>ent Le<u>a</u>r<u>n</u>ing](https://dl.acm.org/doi/abs/10.1145/3453688.3461495)
-* [TCAD'22] IronMan-Pro: Multi-objective Des<u>i</u>gn Space Explo<u>r</u>ati<u>on</u> in HLS via Reinforce<u>m</u>ent Le<u>a</u>r<u>n</u>ing and Gra<u>p</u>h Neu<u>r</u>al Network based M<u>o</u>deling (Accepted, to appear)
+* [TCAD'22] [IronMan-Pro: Multi-objective Des<u>i</u>gn Space Explo<u>r</u>ati<u>on</u> in HLS via Reinforce<u>m</u>ent Le<u>a</u>r<u>n</u>ing and Gra<u>p</u>h Neu<u>r</u>al Network based M<u>o</u>deling](https://ieeexplore.ieee.org/document/9803218)
 
 
 <figure>
 <img src=image/fig_overall4.png alt="Trulli" style="width:100%">
-<figcaption align = "center">The proposed <u>IronMan-Pro</u> is a learning-based framework composed of <u>CT</u>, <u>GPP</u>, and <u>RLMD</u>. During training, <u>IronMan-Pro</u> takes HLS C/C++ code and IRs as inputs and the actual RTL performance (e.g., resource and timing) as the ground truth to train GPP and RLMD. During inference, the well-trained GPP provides graph embeddings and performance predictions to RLMD; the trained RLMD either finds optimized directives that satisfy user-specified design constraints such as available resources, or generates Pareto-solutions with various trade-offs between different resource types.</figcaption>
+<figcaption align = "center">The proposed <u>IronMan-Pro</u> is a learning-based framework composed of <u>CT</u> (<b>C</b>ode <b>T</b>ransformer), <u>GPP</u> (<b>G</b>NN-based <b>P</b>erformance <b>P</b>redictor), and <u>RLMD</u> (<b>RL</b>-based <b>M</b>ulti-objective <b>D</b>SE). During training, <u>IronMan-Pro</u> takes HLS C/C++ code and IRs as inputs and the actual RTL performance (e.g., resource and timing) as the ground truth to train GPP and RLMD. During inference, the well-trained GPP provides graph embeddings and performance predictions to RLMD; the trained RLMD either finds optimized directives that satisfy user-specified design constraints such as available resources, or generates Pareto-solutions with various trade-offs between different resource types.</figcaption>
 </figure>
 
 
@@ -26,12 +26,12 @@
 * After DFGs are generated, move them to [DATASET](https://github.com/lydiawunan/IronMan/tree/main/DATASET).
 * [data_preprocess.py](https://github.com/lydiawunan/IronMan/tree/main/data_preprocess.py) and [generate_graph_datasets.py](https://github.com/lydiawunan/IronMan/tree/main/generate_graph_datasets.py) produce the necessary dataset files for GPP training.
 
-## GPP
+## GPP: <u>G</u>NN-based <u>P</u>erformance <u>P</u>redictor
 * Three GNN-based models to predict DSP, LUT, and critical path (CP) timing.
 * After GPP is well trained, move the proxy models and the embedding models to [RLMD](https://github.com/lydiawunan/IronMan/tree/main/RLMD).
 
 
-## RLMD
+## RLMD: <u>R</u>inforcement <u>L</u>earning based <u>M</u>ulti-Objective <u>D</u>esign Space Exploration
 * Two RL methods are included in RLMD: actor critic, and policy gradient.
 * [hls_env.py](https://github.com/lydiawunan/IronMan/tree/main/RLMD/hls_env.py): the environment.
 * [target_tuples.py](https://github.com/lydiawunan/IronMan/tree/main/RLMD/target_tuples.py): shuffle the tuples for RLMD training.
@@ -55,5 +55,14 @@
     pages={39--44},
     year={2021},
     organization={IEEE}
+    }
+   ```
+   ```
+   @ARTICLE{wu2022ironman,
+    title={IronMan-Pro: Multi-objective Design Space Exploration in HLS via Reinforcement Learning and Graph Neural Network based Modeling},
+    author={Wu, Nan and Xie, Yuan and Hao, Cong},
+    journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
+    year={2022},
+    doi={10.1109/TCAD.2022.3185540}
     }
    ```
