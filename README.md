@@ -1,4 +1,4 @@
-# IronMan
+# IronMan + alpha: Graph Neural Network and Reinforcement Learning in High-Level Synthesis
 
 **Related Papers**
 * [GLSVLSI'21] [IronMan: GNN-ass<u>i</u>sted Design Space Explo<u>r</u>ati<u>o</u>n in High-Level Sy<u>n</u>thesis via Reinforce<u>m</u>ent Le<u>a</u>r<u>n</u>ing](https://dl.acm.org/doi/abs/10.1145/3453688.3461495)
